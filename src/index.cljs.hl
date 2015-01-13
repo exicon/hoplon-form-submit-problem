@@ -1,0 +1,13 @@
+(page "index.html"
+  (:require
+    [tailrecursion.hoplon.reload :refer [reload-all]]))
+
+
+(html
+  (head)
+  (form :action "http://www.w3schools.com/html/action_page.php"
+    	(input :type "submit" :value "Submit"))
+  (body
+    (h1 "Hello, World!")
+    (form :action "http://www.w3schools.com/html/action_page.php"
+    	(input :type "submit" :value "Submit"))))
