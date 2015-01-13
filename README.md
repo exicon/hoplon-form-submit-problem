@@ -1,6 +1,3 @@
-# form-submission
-
-A Hoplon project designed to...well, that part is up to you.
 
 ## Dependencies
 
@@ -16,14 +13,6 @@ A Hoplon project designed to...well, that part is up to you.
     $ boot development
     ```
 
-2. Go to [http://localhost:8000][3] in your browser. You should see "Hello, World!".
+2. Go to [http://localhost:8000][3] in your browser. You should see "Hello, World!" and two buttons. The first "submit" button is outside the body tag and works fine, the second "submit" button is inside the body tag and does not work.
 
-3. You're already done.
 
-## License
-
-Copyright © 2015, **Your Name Goes Here**
-
-[1]: https://github.com/tailrecursion/boot
-[2]: https://github.com/technomancy/leiningen
-[3]: http://localhost:8000

@@ -6,8 +6,8 @@
 (html
   (head)
   (form :action "http://www.w3schools.com/html/action_page.php"
-    	(input :type "submit" :value "Submit"))
+    	"this one is outside the body tag." (input :type "submit" :value "Submit"))
   (body
     (h1 "Hello, World!")
     (form :action "http://www.w3schools.com/html/action_page.php"
-    	(input :type "submit" :value "Submit"))))
+    	"this one is inside the body tag." (input :type "submit" :value "Submit"))))
