@@ -6,8 +6,16 @@
 (html
   (head)
   (form :action "http://www.w3schools.com/html/action_page.php"
-    	"this one is outside the body tag." (input :type "submit" :value "Submit"))
+  	:target "_blank"
+  	:style "padding: 1.5em;"
+    	"This one is outside the body tag. "
+    	(input :type "submit" :value "Submit" ))
   (body
     (h1 "Hello, World!")
     (form :action "http://www.w3schools.com/html/action_page.php"
-    	"this one is inside the body tag." (input :type "submit" :value "Submit"))))
+    	:target "_blank"
+    	"This one is inside the body tag. "
+    	(input :type "submit" :value "Submit"))
+    (form :id "form-id" :action "http://www.w3schools.com/html/action_page.php" :target "_blank"
+  		(button :click #(.submit (js/jQuery "#form-id"))
+  			"This one submit the form by jQuery."))))
